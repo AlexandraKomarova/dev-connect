@@ -54,6 +54,7 @@ router.post("/", [
     const payload = { user: {id: user.id} }
 
     // sign the token, pass the payload, pass the secret
+    // send the token back
     // change to 3600 (1hr) for production
     jwt.sign(payload, config.get("jwtSecret"), { expiresIn: 360000 }, (err, token) => {
       if (err) throw err
