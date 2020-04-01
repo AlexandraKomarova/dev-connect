@@ -1,5 +1,6 @@
 {
   "mongoURI": "mongodb+srv://lola1988:lola1988@dev-connector-z3ujl.mongodb.net/test?retryWrites=true&w=majority",
-  "jwtSecret": "LolaApprovedYou"
-
+  "jwtSecret": "LolaApprovedYou",
+  "githubClientID": "2bd3f8f8fdacf6ddcac9",
+  "githubSecret": "44aa1cf654da14ee9f7865a960769379b308af83"
 }
