@@ -10,7 +10,7 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
   useEffect(() => {
     // put the profiles in the state
     getProfiles()
-  }, [])
+  }, [getProfiles])
 
   return (
     // when we get profiles from the state we only wanna show them if we got them, id we didn't get them yet - spinner
