@@ -13,19 +13,19 @@ import {
 // get current user's profile
 export const getCurrentProfile = () => async dispatch => {
   try {
-    const res = await axios.get("/api/profile")
+    const res = await axios.get('/api/profile/me');
 
     dispatch({
-      type: GET_PROFILES,
+      type: GET_PROFILE,
       payload: res.data
-    })
+    });
   } catch (err) {
     dispatch({
       type: PROFILE_ERROR,
       payload: { msg: err.response.statusText, status: err.response.status }
-    })
+    });
   }
-}
+};
 
 // get profile by user_id
 
